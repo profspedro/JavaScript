@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro programa...</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 255, 0.586);
+            color: white;
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Já me livrei da maldição</p>
+
+    <script>
+        var num1 = window.prompt('Digite um número: ') // ele considera essa variável como uma string
+        var num2 = window.prompt('Digite outro número: ') // string
+        var soma = Number.parseInt(num1) + Number(num2) // convertendo de string para number
+        window.alert(`A soma dos valores ${num1} e ${num2} é igual a ${soma}`)
+        // (Number + Number) para adiçao 
+        // (String + String) para concatenaçao
+    </script>
+    
+</body>
+</html>
