@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nascionalidade</title>
+</head>
+<body>
+    <h1>Nascionalidade</h1>
+    Qual o país que voce nasceu? <input type="text" name="txtpnasc" id="txtpnasc">
+    <input type="button" value="Verificar" onclick="nascionalidade()">
+    <div id="res">
+
+    </div>
+    <script>
+        function nascionalidade() {
+            var txnasc = document.getElementById('txtpnasc').value
+            var res = document.querySelector('div#res')
+            res.innerHTML = `<p>Seu país de nascimento é <strong>${txnasc}</strong></p>`
+            if (txnasc == 'Brasil') {
+                res.innerHTML += `<p>Voce é <strong>BRASILEIRO</strong></p>`
+            } else {
+                res.innerHTML += `<p>Voce é <strong>ESTRANGEIRO</strong></p>`
+            }
+        }
+    </script>
+    
+</body>
+</html>
